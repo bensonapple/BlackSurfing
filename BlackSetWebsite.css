@@ -1,0 +1,403 @@
+body{
+    background-color: #EEEEEE;
+    
+}
+a{
+  text-decoration: none;
+}
+.tittleImg{
+  object-fit: cover;
+  height: 110px;
+  width: 600px;
+  
+}
+/*整個標題方框*/
+.title{
+   color: white;
+   background-color :#252531;
+   text-align: center;
+   font-family: 'Noto Serif TC', serif;
+   box-sizing: border-box;
+   margin-top: -32px;
+   margin-left: -8px;
+   margin-right: -8px;
+   height: 150px;
+   position: sticky;
+   top:-32px;
+   z-index: 1;
+}
+/* 選單 */
+.dropbtn {
+  background-color:#252531;
+  color: white;
+  margin-left: 120px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+  
+}
+
+.dropdown {
+ 
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 90px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:orange;}
+
+.dropdown:hover .dropbtn {color:white;}
+
+/*副標題連結*/
+.subTitle{
+    display: inline;
+    color:white;
+    text-decoration: none;
+    margin-left: 80px;
+    border: 1px solid yellow;
+}
+/*------------------------------------------------------------------------影片和影片內文字*/
+.mainBlock1{
+   
+    height: 100%;
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.videoText{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);    
+    font-size: 60px;
+    font-family: 'Readex Pro', sans-serif;
+    /* color:#e91e63;
+    text-shadow: -3px 0px 5px #e91e63, 0px 0px 2px #e91e63; */
+    /* color: #222;
+    text-shadow: -3px 0px 5px #222, 0px 0px 2px #222 */
+    animation: neon 4s infinite;
+}
+@keyframes neon {
+    0%,30%,60%,90% {
+      color:#e91e63;
+      text-shadow: -3px 0px 5px #e91e63, 0px 0px 2px #e91e63;
+    }
+    15%,45%,75%,100%{
+      color: #222;
+      text-shadow: -3px 0px 5px #222, 0px 0px 2px #222;
+    }
+
+}
+
+
+
+#myVideo{
+    min-width:100%;
+    min-height:100%;
+    object-fit: cover;
+   
+}
+/*------------------------------------------------------------------------自我介紹*/
+.mainBlock2{
+    margin-left: 19%;
+    margin-top: 5%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-bottom: 3%;
+    font-family: 'Noto Serif TC', serif;
+    
+   
+}
+.mainBlock3{
+   
+    margin-top: 5%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-bottom: 3%;
+    
+}
+#coreBeliefs{
+
+    width: 10%;
+   
+    display: inline-block;
+    font-weight: bold;
+}
+.description{
+   
+    margin-left: 15px;
+    display: inline-block;
+    position: relative;
+    top: -35px;
+    
+}
+.taiwan{
+    object-fit: contain;
+    width: 400px;
+    height: 450px;
+    
+    animation: vibration 4s infinite;
+}
+@keyframes  vibration {
+  0%,100%{
+     transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+}
+/*------------------------------------------------------------------------服務項目*/
+.section{
+    
+   
+    padding-bottom: 3%;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+    
+}
+
+.itemTitle{
+    padding: 3%;
+    font-size: 50px;
+    text-align: center;
+}
+.serviceShow{
+    
+    width: 272px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: inline-block;
+    
+    
+}
+.serviceImg{
+    width:270px;
+    height:290px;
+    object-fit: cover;
+    
+    
+}
+
+.serviceShow p{
+    text-align: center;
+    
+}
+/*------------------------------------------------------------------------常見問題*/
+#qaSection{
+    background: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url(./圖片/斜背浪板.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(white, white, 0.1);
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 75%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  margin-top: 30px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 75%;
+  
+  margin-left: 238px;
+  text-align: initial;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------教學方案*/
+
+.lesson{
+   
+    width: 473px;
+    overflow: hidden;
+    display: inline-block;
+    height: 330px;
+    line-height: 330px;
+    font-size: 25px;
+    font-style: italic;
+    margin-right: -5px;
+    margin-bottom: -5px;
+    background-color: #FFFFFF;
+    
+}
+.lessonText{
+   
+  
+  padding-top: 140px;
+  width: 473px;
+  overflow: hidden;
+  display: inline-block;
+  height: 330px;
+  font-size: 25px;
+  font-style: italic;
+  margin-right: -5px;
+  margin-bottom: -5px;
+  background-color: #FFFFFF;
+ 
+}
+.hiddenText{
+  display:none;
+}
+/*-------------------------------------------------------------------------滾動*/
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+
+.mySlides {display: none;}
+.slideshow-container img{
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;/*這裡可以更改滾動圖片的大小*/
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #F6F6F6;
+  margin-top: 5%;
+  
+}
+
+/* Caption text */
+.text {
+  color:black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 5%;
+}
+
+.active {
+  background-color: #685421;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  text-align: center;
+  
+}/*這段很重要 可以更改框*/
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*--------------------------------------第六塊---*/
+
+.endingBigblock{
+    text-align: center;
+    margin-bottom: -8px;
+    margin-right: -8px;
+    margin-left: -8px;
+    height: 300px;
+    padding: 70px;
+}
+
+
+.endingBlock{
+    
+    color:white;
+    width: 23%;
+   
+    display: inline-block;
+    text-align: initial;
+    box-sizing: border-box;
+    margin-left: 50px;
+  
+}
+.endingIcon{
+  object-fit: cover;
+  width: 40px;
+}
+#endingTitle{
+  object-fit: cover;
+  width: 400px;
+  height: 50px;
+  margin-left: -120px;
+}
